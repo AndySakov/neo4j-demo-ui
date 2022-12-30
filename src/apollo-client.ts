@@ -8,7 +8,7 @@ const useClientConfig: () => ApolloClient<NormalizedCacheObject> = () => {
     const client = new ApolloClient({
         uri: `${env.NEXT_PUBLIC_API_BASE_URL}/graphql`,
         headers: {
-            Authorization: token,
+            Authorization: "Bearer " + token,
         },
         cache: new InMemoryCache({
             resultCaching: true,

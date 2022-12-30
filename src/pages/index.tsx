@@ -59,6 +59,19 @@ const Home: NextPage = () => {
           <h3 className="mt-10 text-xl font-extrabold tracking-tight text-white sm:text-xl">
             Get information about movies, TV shows, and more.
           </h3>
+          {isAuthenticated ? (
+            <Link
+              href="/dashboard"
+              className="mt-24 rounded-sm bg-white py-2 px-5"
+              id="db"
+            >
+              <span className="m-0 font-medium tracking-tight text-black sm:text-[1rem]">
+                Go to Dashboard
+              </span>
+            </Link>
+          ) : (
+            <></>
+          )}
         </div>
       </main>
     </>

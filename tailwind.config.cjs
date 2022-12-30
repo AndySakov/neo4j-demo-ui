@@ -12,7 +12,8 @@ module.exports = {
     require("flowbite/plugin"),
     require("@tailwindcss/forms")({
       strategy: "base",
-      strategy: "class"
+      strategy: "class",
     }),
   ],
+  darkMode: "class",
 };

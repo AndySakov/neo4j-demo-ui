@@ -60,7 +60,7 @@ const Dashboard: NextPage = () => {
             </Sidebar>
           </div>
           <div className="flex w-5/6 flex-col">
-            <div className="flex h-[15vh] w-full flex-col items-start justify-between bg-gradient-to-r from-[#3126b0] to-[#6d2fc4] py-8 px-10">
+            <div className="flex min-h-[150px] w-full flex-col items-start justify-between bg-gradient-to-r from-[#3126b0] to-[#6d2fc4] py-8 px-10">
               <Breadcrumb aria-label="Breadcrumbs">
                 <Breadcrumb.Item href="/">Dashboard</Breadcrumb.Item>
               </Breadcrumb>
